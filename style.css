@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: white;
+}
+:root{
+    --pink: hsl(322, 100%, 66%);
+    --Light-Pink: hsl(321, 100%, 78%);
+    --Light-Red: hsl(0, 100%, 63%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Very-Pale-Blue: hsl(207, 100%, 98%);
+    --paragraph: hsla(192, 100%, 9%, 0.772);
+}
+
+/*********Navbar********/
+nav{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 764px) {
+    nav{
+        padding: 25px;
+    }
+    nav img{
+        width: 150px;
+    }
+}
+nav button{
+    width: 150px;
+    border: 2px solid ;
+    border-color: var(--Light-Pink);
+    background: transparent;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: var(--Light-Pink);
+}
+@media (max-width: 764px) {
+    nav button{
+        width: 120px;
+    }
+}
+nav button:hover{
+    background-color: var(--Light-Pink);
+    color: white;
+}
+/*********Header********/
+header{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    max-width: 800px;
+    margin: 80px auto 80px auto ;
+}
+header h1{
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--Very-Dark-Cyan);
+}
+
+header p{
+    font-size: 15px;
+    margin-top: 25px;
+    color: var(--paragraph);
+    max-width: 500px;
+}
+
+header button{
+    border: none;
+    background-color: var(--pink);
+    height: 60px;
+    width: 300px;
+    border-radius: 30px;
+    font-size: 15px;
+    color: white;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+header button:hover{
+    background-color: var(--Light-Pink);
+}
+@media (max-width: 764px) {
+    header{
+        padding: 25px;
+    }
+    header h1{
+        font-size: 25px;
+    }
+    header p{
+        font-size: 14px;
+    }
+}
+/*********app-icon********/
+.app-icon{
+    display: flex;
+    justify-content: center;
+}
+.app-icon img{
+    width: 750px;
+}
+@media (max-width: 764px) {
+    .app-icon img{
+        width: 350px;
+    }
+}
+/*********Guset********/
+.guset{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.icon{
+    margin: 20px;
+}
+.guset img{
+    width: 30px;
+    transform: translateX(-60px);
+}
+.guset h2{
+    font-size: 60px;
+}
+.guset p{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.508);
+}
+/*********Grow********/
+.grow-main img{
+    width: 100%;
+    vertical-align: bottom;
+}
+.grow{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+    background-color: hsl(207, 100%, 98%);
+}
+.grow .info{
+    max-width: 450px;
+    margin-top: 50px;
+}
+.grow img{
+    width: 450px;
+}
+.grow h2{
+    font-size: 25px;
+}
+.grow p{
+    color: rgba(0, 0, 0, 0.508);
+    margin-top: 25px;
+    font-size: 15px;
+}
+@media (max-width: 764px) {
+    .grow {
+        padding: 25px;
+        text-align: center;
+    }
+    .grow img{
+        width: 300px;
+    }
+}
+/*********flowing********/
+.flowing{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+}
+.flowing .info{
+    max-width: 450px;
+    margin-top: 50px;
+}
+.flowing img{
+    width: 450px;
+}
+
+.flowing h2{
+    font-size: 25px;
+}
+.flowing p{
+    color: rgba(0, 0, 0, 0.508);
+    margin-top: 25px;
+    font-size: 15px;
+}
+@media (max-width: 764px) {
+    .flowing {
+        padding: 25px;
+        text-align: center;
+    }
+    .flowing img{
+        width: 300px;
+    }
+}
+/*********Your user********/
+.user{
+    margin-top: 100px;
+}
+/*********Ready********/
+.ready{
+    margin-top: 100px;
+    text-align: center;
+    max-width: 500px;
+    margin: 200px auto;
+}
+.ready h2{
+    font-size: 25px;
+}
+.ready button{
+    border: none;
+    background-color: var(--pink);
+    height: 60px;
+    width: 300px;
+    border-radius: 30px;
+    font-size: 15px;
+    color: white;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.ready button:hover{
+    background-color: var(--Light-Pink);
+}
+/*********Footer********/
+footer{
+    margin-top: 200px;
+}
+
+footer img{
+    width: 100%;
+    transform: translateY(1px);
+    vertical-align: bottom;
+}
+
+footer .row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-color:  hsl(192, 100%, 9%);
+}
+footer .contact img{
+    margin-bottom: 50px;
+}
+footer .row .contact{
+    max-width: 350px;
+}
+footer .row .contact p{
+    color: white;
+}
+
+footer .row .contact .phone-email{
+    display: flex; 
+    align-items: center;
+}
+footer .row .contact .phone-email p{
+    color: hsla(210, 100%, 98%, 0.879);
+}
+footer .row .contact .phone-email i{
+    font-size: 20px;
+    color: white;
+    margin-right: 25px;
+}
+footer .row .contact .email {
+    margin-top: 15px;
+}
+footer .row .contact .phone{
+    margin-top: 40px;
+}
+footer .social-icons{
+    margin: 30px 0;
+}
+footer .social-icons a{
+    text-decoration: none;
+    margin: 0 20px 0 0;
+    font-size: 40px;
+    color: white;
+    transition: 0.3s;
+}
+footer .social-icons a:hover{
+    color: aqua;
+}
+footer form{
+    color: white;
+    padding: 35px;
+}
+footer form h2{
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 25px;
+}
+footer form p{
+    max-width: 340px;
+    color: hsla(210, 100%, 98%, 0.879);
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: 25px;
+}
+footer form button{
+    border: none;
+    color: white;
+    background-color: var(--pink);
+    cursor: pointer;
+    width: 120px;
+    border-radius: 5px;
+    height: 35px;
+    transition: 0.3s;
+}
+footer form button:hover{
+    background-color: var(--Light-Pink);
+}
+footer form input{
+    width: 250px;
+    padding: 15px;
+    margin-right: 25px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+}
+@media (max-width: 764px) {
+    footer .row{
+        flex-wrap: wrap-reverse;
+    }
+    footer .social-icons{
+        margin: 15px 0;
+    }
+    footer form input{
+        width: 100%;
+    }
+    footer form button{
+        margin-top: 15px;
+        width: 200px;
+    }
+}
+/*******Philopater Safwat :D********/
