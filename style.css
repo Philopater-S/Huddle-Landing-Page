@@ -54,10 +54,7 @@ nav button:hover{
 /*********Header********/
 header{
     text-align: center;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     height: 300px;
     max-width: 800px;
     margin: 80px auto 80px auto ;
@@ -70,7 +67,7 @@ header h1{
 
 header p{
     font-size: 15px;
-    margin-top: 25px;
+    margin: 25px auto;
     color: var(--paragraph);
     max-width: 500px;
 }
